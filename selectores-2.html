@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p { /*Los p que estan dentro de los div*/
+            color: lime;
+        }
+        div > div { /*Los div que son padres de div*/
+            background: plum;
+        }
+        .es {
+            background: red; /*De clase*/
+        }
+        div + section { /*Los section que se encuentren adyacentes a los div*/
+            background: green;
+        }
+        div ~ p {   /*Todos los hermanos p despues de div*/
+            color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Beat Boys</p>
+            <div class="es">Es</div>
+        </div>
+    </div>
+    <div>
+        Master
+    </div>
+    <p>Clase de selectores</p>
+    <section>
+        Es lo que mola
+    </section>
+</body>
+</html>
